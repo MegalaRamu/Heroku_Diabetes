@@ -1,0 +1,39 @@
+html{
+
+    background-color: beige;
+
+}
+
+div {
+
+    text-align: center;
+}
+div#center {
+    font-size:xx-large;
+    text-align: center;
+}
+label#home, input#button, select#type{
+    font-size:large;
+}
+
+
+div#choosediv{
+    font-size:large;
+    text-align:initial;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form#single{
+    display: inline-grid;
+}
+
