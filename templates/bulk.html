@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulk Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<p>Please download the sample file format for using bulk predicton</p>
+<a href="{{ url_for('static', filename='css/Diabetes_Prediction_Sample.csv') }}" download>Download</a>
+<p>Please upload a file for bulk Prediction:</p>
+
+<form action="/predict_bulk" method="POST">
+  <input type="file" id="myFile" name="myFile">
+  <input type="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Welcome to Diabetis Prediction Page</title>
+        <div id ='center'>
+        <h> Diabetis Prediction </h>
+        </div>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		</head>
+		<body>
+			<div id="choosediv">
+   Please choose the way you want to predict. You can either predict in bulk or for single Person
+</div>
+			<label id = "home" for="type">Choose a method to Predict:</label>
+			<select name="type" id="type" form="typeform">
+				<option value="Bulk">Bulk</option>
+				<option value="Single">Single</option>
+			</select>
+			<form action="/choosetype" method="POST" id="typeform">
+				<input id ="button" type="submit" value="Submit">
+				</form>
+			</body>
+		</html>
